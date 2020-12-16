@@ -8,8 +8,13 @@
     grid-gap:6rem;
     align-items: start;
 
-    @media only screen and (max-width){
-        height:100vh;
+    @media only screen and (max-width:600px) {
+        grid-gap:2.5rem;
+        margin:10rem 0 ;
+    }
+    @media only screen and (max-width:400px) {
+        grid-gap:1.5rem;
+        margin:5rem 0 ;
     }
     
 }
@@ -22,6 +27,9 @@
     grid-column-gap:2.5rem;
     align-items: start;
     
+    @media only screen and (max-width:600px) {
+        margin:2rem 0 ;
+    }
 
     &__icon{
         fill:$color-primary;
@@ -30,9 +38,6 @@
         grid-row: 1 /span 2; //-1 does not work with impicit grid, only work with explicit grid 
         transform: translateY(-1px);
     }
-
-
-    
 
     &__text{
         font-size: 1.7rem;
