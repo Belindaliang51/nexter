@@ -2,6 +2,11 @@
     background-color: $color-secondary;
     grid-column: sidebar-end/full-end;
 
+    @media only screen and (max-width:1000px) {
+        grid-column: full-start/full-end;
+    }
+
+
     padding:8rem;
 
     .nav{

@@ -3,6 +3,10 @@
     grid-column: col-start 7/full-end;
     padding: 3rem;
 
+    @media only screen and (max-width:800px) {
+      grid-column: 1/-1;
+    }
+
     display: grid;
     justify-content: center;
     align-content: center;
@@ -15,6 +19,10 @@
         grid-column-gap:2rem;
         grid-row-gap:5vh;
         align-items: center;
+
+         @media only screen and (max-width:800px) {
+             grid-template-columns: repeat(3, min-content max-content);
+         }
     }
 
     &__img{
